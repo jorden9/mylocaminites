@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>
+        My-Loc:Aminities Finder
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <style>
+        p{
+            display: inline;
+        }
+        body{
+             background-image: url('/static/img.jpg');
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+        }
+        .card {
+            margin-right: auto;
+            margin-left: auto;
+            width: 250px;
+            box-shadow: 0 15px 25px rgb(0, 0, 0);
+            height: 300px;
+            border-radius: 5px;
+            background: rgba(255, 0, 0, 0);
+            padding: 5px;
+            border: 0cqb;
+            border-color: black;
+            
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <form class='grid' action="/result" method="post">
+    <h1 align="center" style="color:#381878;">Welcome to My-Loc:Aminities Finder!</h1>
+    <div class="container mt-5" action="/result" method="Post">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card" style="z-index: 1; left: -70px; top: 10px; position: absolute; height: 470px; width: 400px">
+                    <div class="card-header" style="background-color:skyblue" align="center">
+                        <h1>Hi User ! </h1>
+                        <h6>Please Select The Aminities</h6>
+                    </div>
+                    <div class="card-body" style="background-color:rgb(224, 224, 224)">
+                      <input type="checkbox" id="School" name="School" value="1">
+                      <input type='hidden' value='0' name='School'>
+                      <label for="School">School & Colleges (Green)</label><br>
+
+                      <input type="checkbox" id="Gym" name="Gym" value="1">
+                      <input type='hidden' value='0' name='Gym'>
+                      <label for="Gym">Gym's (Red) </label><br>
+
+                      <input type="checkbox" id="Gov" name="Gov" value="1">
+                      <input type='hidden' value='0' name='Gov'>
+                      <label for="Gov">Government Office (Blue)</label><br>
+
+                      <input type="checkbox" id="Shopping" name="Shopping" value="1">   
+                      <input type='hidden' value='0' name='Shopping'>
+                      <label for="Shopping">Shooping (Gray)</label><br>
+
+                      <input type="checkbox" id="Medical" name="Medical" value="1">
+                      <input type='hidden' value='0' name='Medical'>
+                      <label for="Medical">Medical's (Purple)</label><br>
+
+                      <input type="checkbox" id="Stat" name="Stat" value="1">
+                      <input type='hidden' value='0' name='Stat'>
+                      <label for="Stat">Xerox And Stationary (Pink)</label><br>
+
+                      <input type="checkbox" id="Electronics" name="Electronics" value="1">
+                      <input type='hidden' value='0' name='Electronics'>
+                      <label for="Electronics">Electronic Stuff (Orange)</label><br>
+                      
+                      <input type="checkbox" id="Grocery" name="Grocery" value="1">
+                      <input type='hidden' value='0' name='Grocery'>
+                      <label for="Grocery">Grocery (Beige)</label><br>
+
+                      <input type="checkbox" id="Food" name="Food" value="1">
+                      <input type='hidden' value='0' name='Food'>   
+                      <label for="Food">Food (CadetBlue)</label><br>
+
+                    </div>
+                    <py-script>
+                    </py-script>
+                    <div class="card-footer" style="background-color:skyblue" align="center">
+                        <br>
+                      <button type="submit" style='z-index: 1; left: 140px; top: 420px; position: absolute; height: 30px; width:100px ; background-color: #864aff'>Submit</button>  
+                      
+                      <div class="card" style="z-index: 1; left: 450px; top: 0px; position: absolute; height: 470px; width: 850px" > 
+                            {% include "trial.html" %}                 
+                      </div>
+                      <br>
+                      <details style="z-index: 1; left: 70px; top: 470px; position: absolute; height: 470px; width: 850px ;color:#ffffff;">
+                        <summary><b>Details</b></summary>
+                        <h3>The Increase in color Intensity Shows higher Ratings For Corresponding Aminities</h3>
+                      </details>
+                    </div>
+
+                </div>
+                >
+            </div>
+        </div>
+    </div>
+    </form>
+  
+      
+</body>
+</html>
